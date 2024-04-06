@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import random
 import matplotlib.animation as animation
-
+#not much to comment it just animates the plot of a sierpinsky triangle
 xx=[1, 11, 6]
 yy=[1, 1, 1+5*3**0.5]
 
@@ -10,7 +10,7 @@ p=[[1,1],[11,1],[6,1+5*3**0.5]]
 z=[2,2]
 
 fig, ax = plt.subplots()
-line, = ax.plot(xx, yy, ',')
+line, = ax.plot(xx, yy, '.')
 
 xx_anim = []
 yy_anim = []
@@ -34,6 +34,6 @@ def update(frame, num_points):
     ax.set_xlim([min(xx_anim), max(xx_anim)])
     ax.set_ylim([min(yy_anim), max(yy_anim)])
 
-ani = animation.FuncAnimation(fig, update, frames=100, interval=0, fargs=(10000,))
+ani = animation.FuncAnimation(fig, update, frames=200, interval=0, fargs=(200,))
 
 plt.show()
