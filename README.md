@@ -1,5 +1,5 @@
 sierp.py
-plots the sierpinsky triangle using the chaos game algorithm, each point is 1 pixel.
+plots the sierpinsky triangle using the chaos game algorithm, each point is 1 pixel. its cool if you use the magnifying glass and zoom in to see individual pixels
 
 sierp-anim.py
 same thing but animated, to show how it works, requires user input which can be 1 or 2
