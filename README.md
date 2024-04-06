@@ -12,7 +12,7 @@ plots the 3P orbital of a hydrogen atom and displays it.
 requires user input 1,2,3,4,or 5.
 higher input = higher resolution (doubled)
 
-the rpg here is that you are a 19th century physicist and mathematician and you are watching a computer plot your equation for an orbital / implement game theory
+the rpg here is that you are a 19th century physicist and mathematician and you are watching a computer plot your equation for an orbital / implement game theory and that makes you so happy and you go on to get the nobel prize in science and/or the field medal and then the story ends.
 
 you might need to install mapplotlib if not already installed
 
