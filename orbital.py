@@ -5,9 +5,9 @@
 import math
 import matplotlib.pyplot as plt
 import numpy as np
-point=','
+point='.' # set to '.' for resolution 1 and 2 to get a decent plot, for higher resolution set to ','
 x=0
-res=4 #resolution variable, keep 4 for fast plot, 8 or 16 for higher resolution (16 takes 2 minutes to plot not recommended)
+res=1 #resolution variable, keep 1,2 for fast plot, 4 for balance , 8 or 16 for higher resolution (16 takes 2 minutes to plot not recommended)
 y=10**-7/(res*100)
 z=10**-7/(res*100)
 #colourss variable contains list of colours for getting a gradient according to probability density
