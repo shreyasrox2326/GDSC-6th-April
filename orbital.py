@@ -1,13 +1,18 @@
 #3px orbital plot
-# 3px because it has radial and angular nodes and looks cool
+#3px because it has radial and angular nodes and looks cool
 
 
 import math
 import matplotlib.pyplot as plt
 import numpy as np
-point='.' # set to '.' for resolution 1 and 2 to get a decent plot, for higher resolution set to ','
+
 x=0
-res=1 #resolution variable, keep 1,2 for fast plot, 4 for balance , 8 or 16 for higher resolution (16 takes 2 minutes to plot not recommended)
+
+choicelist=[[1,'.'],[2,'.'],[4,','],[8,','],[16,',']]
+
+choice=int(input("Enter your resolution choice\ncan be 1,2,3,4 or 5.\nhigher num=higher resolution(double)\n1 and 2 are instant,3 takes a few seconds,4 and 5 are not recommended\nChoice: "))
+res=choicelist[choice-1][0] #resolution variable, keep 4 for fast plot, 8 or 16 for higher resolution (16 takes 2 minutes to plot not recommended)
+point=choicelist[choice-1][1]
 y=10**-7/(res*100)
 z=10**-7/(res*100)
 #colourss variable contains list of colours for getting a gradient according to probability density
